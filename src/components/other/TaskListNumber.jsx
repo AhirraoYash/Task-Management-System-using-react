@@ -19,6 +19,7 @@ const TaskListNumber=()=>{
                     <h1 className="text-2xl font-semibold">0</h1>
                     <h1 className="text-xl font-semibold">New Task</h1>
                 </div>
+                 
 
         </div>
     )
