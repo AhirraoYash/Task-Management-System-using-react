@@ -3,7 +3,7 @@ import Header from "../other/Header";
 import TaskListNumber from "../other/TaskListNumber";
 import TaskList from "../TaskList/TaskList";
 const EmployeeDashboard=(data)=>{
-    console.log(data.name)
+    // console.log(data.name)
     return(
         <div>
             <div className="p-8 bg-red-400 h-screen">
