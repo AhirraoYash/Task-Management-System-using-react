@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { setLocalStorage } from "../../utils/localStorage";
     const Header=(data)=>{
     // console.log("Header",data.name.name.employee.name)
+    
     console.log("Header",data)
       const logOUtUser=()=>{
             // setLocalStorage("loggedInus")
