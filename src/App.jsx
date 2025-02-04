@@ -10,6 +10,7 @@ const App=()=>{
  const [loggedInUserData,setloggedInUserData]=useState(null)
  const AuthData=useContext(AuthContext)
 //  const [loggedInUser,setloggedInUser]=useState(null);
+
  useEffect(()=>{
    const loggedInUser=localStorage.getItem("loggedInUser");
     // console.log("Login user is ",loggedInUser)
@@ -47,7 +48,7 @@ const App=()=>{
 
   return (
     <>
-    {!user ? <Login handleLogin={handleLogin}/> : user=="admin"?<AdminDashboard /> : <EmployeeDashboard  name={loggedInUserData}/>} 
+    {!user ? <Login handleLogin={handleLogin}/> :   user=="admin"?<AdminDashboard changeUser={setUser} name={loggedInUserData}/> :(user=="employee"?  <EmployeeDashboard changeUser={setUser} name={loggedInUserData}/> : null) } 
     
       {/* { <EmployeeDashboard/> } */}
        {/* <AdminDashboard/>  */}
